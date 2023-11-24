@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import { isAuthenticated } from '../../routes/auth';
+import { isAuthenticated } from '../../Routes/Auth';
 import Logo from '../img/logo.png';
 import './style.scss';
 

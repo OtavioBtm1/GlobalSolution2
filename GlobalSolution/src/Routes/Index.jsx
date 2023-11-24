@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter, Routes as RoutesDom, Route, Navigate } from 'react-router-dom';
-import Home from '../screens/Home/Index';
-import Login from '../screens/Login';
+import Home from '../Screens/Home/Index';
+import Login from '../Screens/Login/Index';
 import { isAuthenticated } from './Auth';
-import Solutions from '../screens/Solution';
-import Register from '../screens/Register';
+import Solutions from '../Screens/Solution/Index';
+import Register from '../Screens/Register/Index';
 
 const PrivateRoute = ({ element: Element, ...rest }) => {
   if (isAuthenticated()) {

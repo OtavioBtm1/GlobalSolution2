@@ -1,0 +1,108 @@
+body {
+  background-color: #ffffff;
+  margin: 0;
+  background: linear-gradient(to bottom, #6d4edb 45%, #ffffff);
+}
+
+.background {
+  width: 100%; /* Ajuste para tela cheia */
+  height: 100vh; /* Usando altura da viewport */
+  position: relative; /* Mudança para tornar o posicionamento relativo */
+
+  .shape {
+    height: 20%; /* Redução do tamanho dos círculos */
+    width: 20%; /* Redução do tamanho dos círculos */
+    position: absolute;
+    border-radius: 50%;
+  }
+}
+
+.form {
+  width: 60%; /* Ajuste para tela cheia */
+  max-width: 400px; /* Limitando a largura máxima */
+  background-color: #6d4edb;
+  position: absolute;
+  top: 28%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(239, 239, 239, 0.1);
+  box-shadow: 0 0 40px rgba(131, 41, 172, 0.6);
+  padding: 3%;
+  text-align: center;
+
+  * {
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+  }
+
+  h3 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+  }
+
+  .content {
+    margin-top: 20px;
+
+    h1 {
+      font-size: 2em;
+    }
+
+    p {
+      font-size: 1.2em;
+    }
+  }
+
+  .links {
+    margin-top: 20px;
+
+    .logout-btn,
+    .solutions-btn {
+      display: inline-block;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      margin: 0 5px;
+      color: #ffffff;
+      border: 1px solid #ffffff;
+
+      &:hover {
+        background-color: #ffffff;
+        color: #6d4edb;
+      }
+    }
+  }
+
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6d4edb;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+    .logo {
+      max-width: 80%;
+      border-radius: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .form {
+    width: 80%; /* Ajuste para telas menores */
+    max-width: 90%; /* Limitando a largura máxima */
+  }
+
+  .background .shape {
+    display: none; /* Ocultando os círculos em telas menores */
+  }
+}
